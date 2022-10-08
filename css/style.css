@@ -1,0 +1,46 @@
+html{
+    scroll-behavior: smooth;
+}
+
+body{
+    margin: 0;
+    padding: 0;
+}
+
+.navbar {
+    background-color: #ffffff;
+    box-shadow: 0 1px 5px 0 rgba(0, 0, 0, 05);
+    min-height: 80px;
+}
+  
+.nav-link {
+    color: #1a1a1a;
+}
+
+.nav-link:hover {
+    color: #1a1a1a;
+}
+  
+.navbar-brand {
+    color: #1a1a1a;
+}
+
+.navbar-brand:hover {
+    color: #1a1a1a;
+}
+  
+.margin-icon-nav {
+    margin-right: 7px;
+}
+
+.size-icon-nav {
+    font-size: 30px;
+}
+
+.navbar-toggler {
+    font-size: 40px;
+}
+  
+.navbar-toggler:focus {
+    outline: none;
+}
