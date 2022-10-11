@@ -1,16 +1,14 @@
-/* PROPIEDADES GENERALES */
 *{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: 'Poppins', sans-serif;
 }
 
 body{
     background-color: #fff; 
     min-height: 100vh;
     overflow-x: hidden; 
-    background: linear-gradient(0deg, rgba(207,224,255,1) 0%, rgba(130,127,209,1) 100%);
+    /*background: linear-gradient(0deg, rgba(207,224,255,1) 0%, rgba(130,127,209,1) 100%);*/
 }
 
 header{
@@ -69,6 +67,14 @@ header .logo{
     outline: none;
 }
 
+.raya{
+    max-width: 100%;
+    border-width: 0.2rem;
+    border-color: #e49116; 
+    margin-right: 800px; 
+    margin-left: 800px;
+}
+
 section{
     position: relative;
     width: 100%;
@@ -104,7 +110,7 @@ section img{
 .color_fondo{
     width: 100%;
     height: 100vh;
-    background: #00339236;
+    background: #ffffff;
 }
 
 section #slogan{
@@ -138,21 +144,28 @@ section #btn:hover{
     background: #ad6f10;
 }
 
+section #raya-titulo{
+    position: absolute;
+    text-align: center;
+    transform: translateY(-50px);
+}
+
 .sec{
-    background: #d6d6d6;
+    background: #1751a4;
     position: relative;
     padding: 80px;
+    height: 80vh; 
 }
 
 .sec h2{
     font-size: 3.5vw;
-    color: #fff;
+    color: #ffffff;
     margin-bottom: 10px;
     text-transform: uppercase;
 }
 
 .sec h3{
-    font-size: 2vw;
+    font-size: 2.5vw;
     color: #fff;
     margin-bottom: 10px;
 }
@@ -162,7 +175,181 @@ section #btn:hover{
     color: #fff;
 }
 
-/* AHORA HAREMOS EL RESPONSIVO */
+.sec2{
+    background-color: #ffffff;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding-top: 100px;
+    padding-bottom: 100px;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(2, auto);
+    grid-template-areas: "slot0 slot0" 
+                         "slot1 slot2";
+}
+
+.posicion-itachi{
+    margin: 0;
+    padding: 0;
+    
+}
+
+.tamano{
+    width: 55%;
+    height: 55%;
+}
+
+.slot0{
+    grid-area: slot0;
+    text-align: center;
+}
+
+.raya2{
+    max-width: 100%;
+    border-width: 0.2rem;
+    border-color: #e49116; 
+    margin-right: 880px; 
+    margin-left: 880px;
+    padding-bottom: 50px;
+}
+
+.slot1{
+    grid-area: slot1;
+    display: flex;
+    align-items: center;
+}
+
+.tarjeta-itachi{
+    background-color: #ffffff;
+    margin-left: 230px;
+    margin-right: 230px;
+    padding-top: 15px;
+    padding-bottom: 70px;
+    border-radius: 15px;
+    color: #000000;
+}
+
+.sombra-tarjeta{
+    box-shadow: 5px 5px 5px 5px #b4b4b4;
+}
+
+.slot2{
+    display: flex;
+    align-items: center;
+    grid-area: slot2;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(2, auto);
+    grid-template-areas: "slotj1 slotj2"
+                         "slotj3 slotj4";
+}
+
+.slotj1{
+    grid-area: slotj1;
+    padding: 30px;
+}
+
+.slotj2{
+    grid-area: slotj2;
+    padding: 30px;
+}
+
+.slotj3{
+    grid-area: slotj3;
+    padding: 30px;
+}
+
+.slotj4{
+    grid-area: slotj4;
+    padding: 30px;
+}
+
+.tamano-iconos{
+    font-size: 150px;
+}
+
+ion-icon {
+    color: #dbdbdb;
+}
+
+.btn-primary{
+    border: none;
+    background-color: #e49116;
+    color: #fff;  
+    border-radius: 20px; 
+    text-align: center;
+    font-size: 1.2em;
+    font-weight: 500;
+    letter-spacing: 2px;
+}
+
+.btn-primary:hover{
+    background-color: #ad6f10;
+}
+
+.card{
+    border-radius: 15px;
+    margin: 0;
+    padding: 0;
+    box-shadow: #1a1a1a;
+    transform-style: preserve-3d;
+    perspective: 1000px;
+}
+
+.efecto-3d{
+    transform: translateZ(30px);
+}
+
+.sec3{
+    display: flex;
+    align-items: center;
+    background-color: #ececec;
+    width: 100%;
+    height: 100vh;
+}
+
+.sec4{
+    height: 90vh;
+    background-color: #fff;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(1, auto);
+    grid-template-areas: "slotm0 slotm0 slotm0"
+                         "slotm1 slotm2 slotm3"
+                         "slotm1 slotm2 slotm3";
+}
+
+.slotm0{
+    grid-area: slotm0;
+}
+
+.slotm1{
+    grid-area: slotm1;
+}
+
+.slotm2{
+    grid-area: slotm2;
+}
+
+.slotm3{
+    grid-area: slotm3;
+}
+
+.sec5{
+    height: 5vh;
+    background-color: #000000;
+}
+
+.raya3{
+    max-width: 100%;
+    border-width: 0.2rem;
+    border-color: #e49116; 
+    margin-right: 880px; 
+    margin-left: 880px;
+    
+}
+
 @media (max-width: 991px){
     
 }
