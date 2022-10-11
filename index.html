@@ -6,6 +6,14 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Silkscreen&display=swap" rel="stylesheet">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Lobster&display=swap" rel="stylesheet">
+
     <!-- Link Swiper's CSS -->
     <link
       rel="stylesheet"
@@ -40,7 +48,7 @@
         <nav class="navbar navbar-expand-lg fixed-top animation-opacity" id="nav">
             <div class="container">
                 <ion-icon name="code-outline" class="margin-icon-nav size-icon-nav"></ion-icon>
-                <a class="navbar-brand" href="#opacity" id="principio">Intro Portafolio</a>
+                <a class="navbar-brand" href="#primero" id="principio">Intro Portafolio</a>
                 <button class="navbar-toggler" data-toggle="collapse" data-target="#navbarSupportedContent"
                     aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                     <ion-icon name="menu-outline"></ion-icon>
@@ -58,7 +66,7 @@
                             <a class="nav-link" href="#cuarto" id="portafolio">Portafolio</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="#sexto" id="contacto">Contacto</a>
+                            <a class="nav-link" href="#quinto" id="contacto">Contacto</a>
                         </li>
                     </ul>
                 </div>
@@ -68,23 +76,21 @@
 
     <!--seccion 1-->
 
-    <section>
+    <section id="primero">
         <img src="./images/fondo_transparente.png">
         <img src="./images/muñeca_final_transparente.png" alt="fondo" id="fondo">
         <img src="./images/particulas_fondo_transparente.png" alt="fondo" id="fondoParticulas">
         <img src="./images/fondo_transparente.png">
-        <h2 id="slogan">Portafolio Web</h2>
-        <hr id="raya-titulo" class="raya" />
-        <a href="#" id="btn">Empecemos</a>
+        <h3 class="estilo-titulo" id="slogan">Portafolio Web</h3>
+        <a href="#segundo" id="btn">Empecemos</a>
     </section>
 
-    <div class="sec text-center justify-content-center aling-self-center" style="padding-top: 300px; padding-bottom: 400px;" >
+    <div id="segundo" class="sec text-center justify-content-center aling-self-center" style="padding-top: 300px; padding-bottom: 400px;" >
             <h3 id="sobremi">Sobre mi</h3>
             <hr id="sobremi2" class="raya"/>
             <br>
-            <p id="sobremi3" style="padding-left: 200px; padding-right: 200px;">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus malesuada condimentum odio non condimentum.
-                Vestibulum hendrerit condimentum vehicula. Quisque facilisis magna ut nulla euismod, ac placerat augue
-                sollicitudin. 
+            <p id="sobremi3" style="padding-left: 200px; padding-right: 200px;">Hola! me llamo Yeison Leonardo Navarro Cardona Bienvenido a mi portal web. Soy una persona emprendedora, dedicada, innovadora y creativa.
+                soy un soñador capaz, con muchas ganas de aprender lo que me depara el día a día. 
             </p>
     </div>
 
@@ -96,7 +102,7 @@
 
         <!--slot 0-->
 
-        <div class="slot0">
+        <div id="tercero" class="slot0">
             <h3 style="font-size: 2.5vw;
             color: #1751a4;">Servicios</h3>
             <hr class="raya2"/>
@@ -118,43 +124,43 @@
 
         <div class="slot2 text-center">
             <div class="slotj1">
-                <div class="card sombra-tarjeta" style="width: 22rem;" data-tilt data-tilt-reverse="true" data-tilt-scale="1.1" data-tilt-glare data-tilt-max-glare="0.2">
+                <div class="card sombra-tarjeta" style="width: 18rem; height: 20rem;" data-tilt data-tilt-reverse="true" data-tilt-scale="1.1" data-tilt-glare data-tilt-max-glare="0.2">
                     <ion-icon name="code" class="card-img-top tamano-iconos efecto-3d" alt="..."></ion-icon>
                     <div class="card-body">
-                      <h5 class="card-title efecto-3d">Card title</h5>
-                      <p class="card-text efecto-3d">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                      <a href="#" class="btn btn-primary efecto-3d">Go somewhere</a>
+                      <h5 class="card-title efecto-3d">Desarrollo Web</h5>
+                      <p class="card-text efecto-3d" style="font-size: 12px;">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                      <a href="#cuarto" class="btn btn-primary efecto-3d" style="font-size: 15px;">Go somewhere</a>
                     </div>
                   </div>
             </div>
             <div class="slotj2">
-                <div class="card sombra-tarjeta" style="width: 22rem;" data-tilt data-tilt-reverse="true" data-tilt-scale="1.1" data-tilt-glare data-tilt-max-glare="0.2">
+                <div class="card sombra-tarjeta" style="width: 18rem; height: 20rem; margin-right: 150px;" data-tilt data-tilt-reverse="true" data-tilt-scale="1.1" data-tilt-glare data-tilt-max-glare="0.2">
                     <ion-icon name="game-controller" class="card-img-top tamano-iconos efecto-3d" alt="..."></ion-icon>
                     <div class="card-body">
-                      <h5 class="card-title">Card title</h5>
-                      <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                      <a href="#" class="btn btn-primary">Go somewhere</a>
-                    </div>
+                        <h5 class="card-title efecto-3d">Unity</h5>
+                        <p class="card-text efecto-3d" style="font-size: 12px;">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                        <a href="#cuarto" class="btn btn-primary efecto-3d" style="font-size: 15px;">Go somewhere</a>
+                      </div>
                   </div>
             </div>
             <div class="slotj3" >
-                <div class="card sombra-tarjeta" style="width: 22rem;" data-tilt data-tilt-reverse="true" data-tilt-scale="1.1" data-tilt-glare data-tilt-max-glare="0.2">
+                <div class="card sombra-tarjeta" style="width: 18rem; height: 20rem;" data-tilt data-tilt-reverse="true" data-tilt-scale="1.1" data-tilt-glare data-tilt-max-glare="0.2">
                     <ion-icon name="analytics" class="card-img-top tamano-iconos efecto-3d" alt="..."></ion-icon>
                     <div class="card-body">
-                      <h5 class="card-title">Card title</h5>
-                      <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                      <a href="#" class="btn btn-primary">Go somewhere</a>
-                    </div>
+                        <h5 class="card-title efecto-3d">Modelado en 3D</h5>
+                        <p class="card-text efecto-3d" style="font-size: 12px;">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                        <a href="#cuarto" class="btn btn-primary efecto-3d" style="font-size: 15px;">Go somewhere</a>
+                      </div>
                   </div>
             </div>
             <div class="slotj4" >
-                <div class="card sombra-tarjeta" style="width: 22rem;" data-tilt data-tilt-reverse="true" data-tilt-scale="1.1" data-tilt-glare data-tilt-max-glare="0.2">
+                <div class="card sombra-tarjeta" style="width: 18rem; height: 20rem; margin-right: 150px;" data-tilt data-tilt-reverse="true" data-tilt-scale="1.1" data-tilt-glare data-tilt-max-glare="0.2">
                     <ion-icon name="color-palette" class="card-img-top tamano-iconos efecto-3d pt-2" alt="..."></ion-icon>
                     <div class="card-body">
-                      <h5 class="card-title">Card title</h5>
-                      <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                      <a href="#" class="btn btn-primary">Go somewhere</a>
-                    </div>
+                        <h5 class="card-title efecto-3d">UI/UX</h5>
+                        <p class="card-text efecto-3d" style="font-size: 12px;">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                        <a href="#cuarto" class="btn btn-primary efecto-3d" style="font-size: 15px;">Go somewhere</a>
+                      </div>
                   </div>
             </div>
         </div>
@@ -182,7 +188,7 @@
 
     <img src="/images/raya-gris.png">
   
-    <div class="sec3">
+    <div id="cuarto" class="sec3">
         <!-- Swiper -->
       <div class="swiper mySwiper">
         <div class="swiper-wrapper">
@@ -225,7 +231,7 @@
       </div>
     </div>
 
-    <div class="sec4" style="padding-top: 100px;">
+    <div id="quinto" class="sec4" style="padding-top: 100px;">
         <div class="slotm0">
             <h3 style="font-size: 2.5vw; color: #1751a4; text-align: center;">Contacto</h3>
             <hr class="raya3"/>

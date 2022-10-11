@@ -1,7 +1,10 @@
 *{
     margin: 0;
     padding: 0;
-    box-sizing: border-box;
+}
+
+html{
+    scroll-behavior: smooth;
 }
 
 body{
@@ -9,6 +12,7 @@ body{
     min-height: 100vh;
     overflow-x: hidden; 
     /*background: linear-gradient(0deg, rgba(207,224,255,1) 0%, rgba(130,127,209,1) 100%);*/
+    font-family: 'Silkscreen', cursive;
 }
 
 header{
@@ -27,6 +31,11 @@ header{
 header .logo{
     width: 15vmax;
     cursor: pointer;
+}
+
+.estilo-titulo{
+    font-family: 'Lobster', cursive;
+    font-size: 80px;
 }
 
 .navbar {
@@ -116,9 +125,7 @@ section img{
 section #slogan{
     position: absolute;
     color: #ffffff;
-    font-size: 4vmax;
     text-align: center;
-    font-family: 'Rancho', sans-serif;
     line-height: 0.8em;
     white-space: nowrap;
     transform: translateY(-100px);
@@ -161,7 +168,6 @@ section #raya-titulo{
     font-size: 3.5vw;
     color: #ffffff;
     margin-bottom: 10px;
-    text-transform: uppercase;
 }
 
 .sec h3{
@@ -178,7 +184,7 @@ section #raya-titulo{
 .sec2{
     background-color: #ffffff;
     top: 0;
-    left: 0;
+    
     width: 100%;
     padding-top: 100px;
     padding-bottom: 100px;
@@ -236,7 +242,6 @@ section #raya-titulo{
 
 .slot2{
     display: flex;
-    align-items: center;
     grid-area: slot2;
     display: grid;
     grid-template-columns: repeat(2, 1fr);
@@ -247,26 +252,39 @@ section #raya-titulo{
 
 .slotj1{
     grid-area: slotj1;
-    padding: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-bottom: 15px;
 }
 
 .slotj2{
     grid-area: slotj2;
-    padding: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-bottom: 15px;
 }
 
 .slotj3{
     grid-area: slotj3;
-    padding: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-top: 15px;
 }
 
 .slotj4{
     grid-area: slotj4;
-    padding: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-top: 15px;
 }
 
 .tamano-iconos{
-    font-size: 150px;
+    font-size: 100px;
+    padding-top: 15px;
 }
 
 ion-icon {
@@ -290,9 +308,6 @@ ion-icon {
 
 .card{
     border-radius: 15px;
-    margin: 0;
-    padding: 0;
-    box-shadow: #1a1a1a;
     transform-style: preserve-3d;
     perspective: 1000px;
 }
