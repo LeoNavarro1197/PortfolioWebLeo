@@ -76,14 +76,6 @@ header .logo{
     outline: none;
 }
 
-.raya{
-    max-width: 100%;
-    border-width: 0.2rem;
-    border-color: #e49116; 
-    margin-right: 800px; 
-    margin-left: 800px;
-}
-
 section{
     position: relative;
     width: 100%;
@@ -164,12 +156,6 @@ section #raya-titulo{
     height: 80vh; 
 }
 
-.sec h2{
-    font-size: 3.5vw;
-    color: #ffffff;
-    margin-bottom: 10px;
-}
-
 .sec h3{
     font-size: 2.5vw;
     color: #fff;
@@ -181,10 +167,24 @@ section #raya-titulo{
     color: #fff;
 }
 
+.raya{
+    max-width: 100%;
+    border-width: 0.2rem;
+    border-color: #e49116; 
+    margin-right: 800px; 
+    margin-left: 800px;
+}
+
+.sobremi3{
+    padding-left: 200px; 
+    padding-right: 200px;
+    font-size: 20px;
+}
+
 .sec2{
+    position: relative;
     background-color: #ffffff;
     top: 0;
-    
     width: 100%;
     padding-top: 100px;
     padding-bottom: 100px;
@@ -193,6 +193,20 @@ section #raya-titulo{
     grid-template-rows: repeat(2, auto);
     grid-template-areas: "slot0 slot0" 
                          "slot1 slot2";
+}
+
+.sec2 h3{
+    font-size: 2.5vw; 
+    color: #1751a4;
+}
+
+.raya2{
+    max-width: 100%;
+    border-width: 0.2rem;
+    border-color: #e49116; 
+    margin-right: 880px; 
+    margin-left: 880px;
+    padding-bottom: 50px;
 }
 
 .posicion-itachi{
@@ -209,15 +223,6 @@ section #raya-titulo{
 .slot0{
     grid-area: slot0;
     text-align: center;
-}
-
-.raya2{
-    max-width: 100%;
-    border-width: 0.2rem;
-    border-color: #e49116; 
-    margin-right: 880px; 
-    margin-left: 880px;
-    padding-bottom: 50px;
 }
 
 .slot1{
@@ -282,6 +287,10 @@ section #raya-titulo{
     padding-top: 15px;
 }
 
+.margin-slotj2-slotj4{
+    margin-right: 150px;
+}
+
 .tamano-iconos{
     font-size: 100px;
     padding-top: 15px;
@@ -335,6 +344,12 @@ ion-icon {
                          "slotm1 slotm2 slotm3";
 }
 
+.sec4 h3{
+    font-size: 2.5vw; 
+    color: #1751a4; 
+    text-align: center;
+}
+
 .slotm0{
     grid-area: slotm0;
 }
@@ -365,6 +380,219 @@ ion-icon {
     
 }
 
-@media (max-width: 991px){
+.tamano-iconos-contacto{
+    font-size: 100px;
+    padding-top: 15px;
+}
+
+.sec4 p{
+    padding: 8px; 
+    text-align: center; 
+}
+
+.sec5 p{
+    font-size: 12px; 
+    color: white; 
+    text-align: center;
+}
+
+@media (max-width: 415px){
+
+    /*seccion*/
+    .estilo-titulo{
+        font-family: 'Lobster', cursive;
+        font-size: 40px;
+    }
+
+    .navbar{
+        position: absolute;
+        width: 100%;
+    }
+
+    .quitar-titulo-nav{
+        display: none;
+    }
+
+    .quitar-muneca{
+        display: none;
+    }
+
+    /*sec*/
+    .sec{
+        background: #1751a4;
+        position: relative;
+        padding: 0px;
+        height: 10vh; 
+    }
+
+    .sec h3{
+        font-size: 6.5vw;
+        color: #fff;
+        margin-bottom: 3px;
+    }
+
+    .raya{
+        max-width: 100%;
+        border-width: 0.2rem;
+        border-color: #e49116; 
+        margin-right: 150px; 
+        margin-left: 150px;
+    }
+
+    .sobremi3{
+        padding-left: 20px; 
+        padding-right: 20px;
+    }
+
+    .sec p{
+        font-size: 0.7em;
+        color: #fff;
+    }
+
+    .wave{
+        position: absolute;
+        width: 100%;
+    }
+
+    /*sec*/
+    .sec2{
+        position: static;
+        background-color: #ffffff;
+        top: 0;
+        width: 100%;
+        padding-top: 100px;
+        padding-bottom: 100px;
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: repeat(2, auto);
+        grid-template-areas: "slot0 slot0" 
+                             "slot1 slot1"
+                             "slot2 slot2";
+    }
     
+    .sec2 h3{
+        font-size: 6.5vw; 
+        color: #1751a4;
+    }
+    
+    .raya2{
+        max-width: 100%;
+        border-width: 0.2rem;
+        border-color: #e49116; 
+        margin-right: 150px; 
+        margin-left: 150px;
+        padding-bottom: 50px;
+    }
+
+    .posicion-itachi{
+        display: none;
+    }
+
+    /*sec2 slot2*/
+    .slot2{
+        display: flex;
+        grid-area: slot2;
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        grid-template-rows: repeat(4, auto);
+        grid-template-areas: "slotj1"
+                             "slotj2"
+                             "slotj3"
+                             "slotj4";
+    }
+
+    .slotj1{
+        grid-area: slotj1;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        padding-top: 15px;
+        padding-bottom: 15px;
+    }
+    
+    .slotj2{
+        grid-area: slotj2;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        padding-top: 15px;
+        padding-bottom: 15px;
+    }
+    
+    .slotj3{
+        grid-area: slotj3;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        padding-top: 15px;
+        padding-bottom: 15px;
+    }
+    
+    .slotj4{
+        grid-area: slotj4;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        padding-top: 15px;
+        padding-bottom: 15px;
+    }
+
+    .margin-slotj2-slotj4{
+        margin-right: 0px;
+    }
+
+    /*sec3*/
+    .sec3{
+        display: flex;
+        align-items: center;
+        background-color: #ececec;
+        width: 100%;
+        height: 60vh;
+    }
+
+    /*sec4*/
+    .sec4{
+        height: 90vh;
+        background-color: #fff;
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        grid-template-rows: repeat(1, auto);
+        grid-template-areas: "slotm0 slotm0 slotm0"
+                             "slotm1 slotm1 slotm1"
+                             "slotm2 slotm2 slotm2"
+                             "slotm3 slotm3 slotm3";
+    }
+
+    .sec4 h3{
+        font-size: 6.5vw; 
+        color: #1751a4; 
+        text-align: center;
+    }
+
+    .raya3{
+        max-width: 100%;
+        border-width: 0.2rem;
+        border-color: #e49116; 
+        margin-right: 150px; 
+        margin-left: 150px;
+        
+    }
+
+    .tamano-iconos-contacto{
+        font-size: 50px;
+        padding-top: 0px;
+    }
+
+    .sec4 p{
+        padding: 8px; 
+        text-align: center; 
+        font-size: 13px;
+    }
+
+    /*sec5*/
+    .sec5 p{
+        font-size: 8px; 
+        color: white; 
+        text-align: center;
+    }
 }

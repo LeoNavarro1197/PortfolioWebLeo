@@ -48,7 +48,7 @@
         <nav class="navbar navbar-expand-lg fixed-top animation-opacity" id="nav">
             <div class="container">
                 <ion-icon name="code-outline" class="margin-icon-nav size-icon-nav"></ion-icon>
-                <a class="navbar-brand" href="#primero" id="principio">Intro Portafolio</a>
+                <a class="navbar-brand quitar-titulo-nav" href="#primero" id="principio">Intro Portafolio</a>
                 <button class="navbar-toggler" data-toggle="collapse" data-target="#navbarSupportedContent"
                     aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                     <ion-icon name="menu-outline"></ion-icon>
@@ -78,7 +78,7 @@
 
     <section id="primero">
         <img src="./images/fondo_transparente.png">
-        <img src="./images/muñeca_final_transparente.png" alt="fondo" id="fondo">
+        <img class="quitar-muneca" src="./images/muñeca_final_transparente.png" alt="fondo" id="fondo">
         <img src="./images/particulas_fondo_transparente.png" alt="fondo" id="fondoParticulas">
         <img src="./images/fondo_transparente.png">
         <h3 class="estilo-titulo" id="slogan">Portafolio Web</h3>
@@ -89,12 +89,12 @@
             <h3 id="sobremi">Sobre mi</h3>
             <hr id="sobremi2" class="raya"/>
             <br>
-            <p id="sobremi3" style="padding-left: 200px; padding-right: 200px;">Hola! me llamo Yeison Leonardo Navarro Cardona Bienvenido a mi portal web. Soy una persona emprendedora, dedicada, innovadora y creativa.
+            <p id="sobremi3" class="sobremi3">Hola! me llamo Yeison Leonardo Navarro Cardona Bienvenido a mi portal web. Soy una persona emprendedora, dedicada, innovadora y creativa.
                 soy un soñador capaz, con muchas ganas de aprender lo que me depara el día a día. 
             </p>
     </div>
 
-    <img src="/images/wave.png">
+    <img class="wave" src="/images/wave.png">
 
     <!--seccion 2-->
 
@@ -103,8 +103,7 @@
         <!--slot 0-->
 
         <div id="tercero" class="slot0">
-            <h3 style="font-size: 2.5vw;
-            color: #1751a4;">Servicios</h3>
+            <h3>Servicios</h3>
             <hr class="raya2"/>
         </div>
 
@@ -116,7 +115,7 @@
                 <img class="tamano" src="./images/itachi_oficial_cortado.png" alt="fondo" id="Itachi">
                 <div class="tarjeta-itachi sombra-tarjeta">
                   <p style="align-items: left;"><b>Blender 3D</b></p>
-                  <p style="align-items: left;">Uchiha Itachi. Modelado estilo cartoon (anime) realizado en Blender 3D</p>
+                  <p style="align-items: left;">Itachi Uchiha. Modelado estilo cartoon (anime) realizado en Blender 3D</p>
                 </div>
             </div>
         </div>
@@ -135,7 +134,7 @@
                   </div>
             </div>
             <div class="slotj2">
-                <div class="card sombra-tarjeta" style="width: 18rem; height: 20rem; margin-right: 150px;" data-tilt data-tilt-reverse="true" data-tilt-scale="1.1" data-tilt-glare data-tilt-max-glare="0.2">
+                <div class="card sombra-tarjeta margin-slotj2-slotj4" style="width: 18rem; height: 20rem;" data-tilt data-tilt-reverse="true" data-tilt-scale="1.1" data-tilt-glare data-tilt-max-glare="0.2">
                     <ion-icon name="game-controller" class="card-img-top tamano-iconos efecto-3d" alt="..."></ion-icon>
                     <div class="card-body">
                         <h5 class="card-title efecto-3d">Unity</h5>
@@ -155,7 +154,7 @@
                   </div>
             </div>
             <div class="slotj4" >
-                <div class="card sombra-tarjeta" style="width: 18rem; height: 20rem; margin-right: 150px;" data-tilt data-tilt-reverse="true" data-tilt-scale="1.1" data-tilt-glare data-tilt-max-glare="0.2">
+                <div class="card sombra-tarjeta margin-slotj2-slotj4" style="width: 18rem; height: 20rem;" data-tilt data-tilt-reverse="true" data-tilt-scale="1.1" data-tilt-glare data-tilt-max-glare="0.2">
                     <ion-icon name="color-palette" class="card-img-top tamano-iconos efecto-3d pt-2" alt="..."></ion-icon>
                     <div class="card-body">
                         <h5 class="card-title efecto-3d">UI/UX</h5>
@@ -168,6 +167,7 @@
     </div>
 
     <style>  
+
         .swiper {
           width: 100%;
           padding-top: 100px;
@@ -185,9 +185,30 @@
           display: block;
           width: 100%;
         }
+
+        .tamano-video{
+          width: "10";
+          height: "5";
+        }
+
+        @media (max-width: 415px){
+          .swiper-slide {
+          background-position: center;
+          background-size: cover;
+          width: 400px;
+          height: 200px;
+        }
+
+        .tamano-video{
+          width: "500";
+          height: "250";
+        }
+
+        }
+
       </style>
 
-    <img src="/images/raya-gris.png">
+    <img class="wave" src="/images/raya-gris.png">
   
     <div id="cuarto" class="sec3">
         <!-- Swiper -->
@@ -200,23 +221,13 @@
             <img src="/images/portafolio-img/itachivolumetrico.png" />
           </div>
           <div class="swiper-slide">
-            <video
-                id="my-video"
-                class="video-js"
-                controls
-                preload="auto"
-                width="1000"
-                height="500"
-                poster="/images/portafolio-img/itachiultimo1.png"
-                data-setup="{}"
-                >
+            <video id="my-video" class="video-js" controls preload="auto" poster="/images/portafolio-img/itachiultimo1.png" data-setup="{}">
                 <source src="/images/portafolio-video/itachiVideo.mp4" type="video/mp4" />
                 <p class="vjs-no-js">
                 To view this video please enable JavaScript, and consider upgrading to a
                 web browser that
                 <a href="https://videojs.com/html5-video-support/" target="_blank"
-                    >supports HTML5 video</a
-                >
+                    >supports HTML5 video</a>
                 </p>
             </video>
           </div>
@@ -234,25 +245,25 @@
 
     <div id="quinto" class="sec4" style="padding-top: 100px;">
         <div class="slotm0">
-            <h3 style="font-size: 2.5vw; color: #1751a4; text-align: center;">Contacto</h3>
+            <h3>Contacto</h3>
             <hr class="raya3"/>
         </div>
         <div class="slotm1">
-            <ion-icon name="call" class="card-img-top tamano-iconos" alt="..."></ion-icon>
-            <p style="padding: 8px; text-align: center; font-weight: bold;">+57 (300) 299-8195</p>
+            <ion-icon name="call" class="card-img-top tamano-iconos-contacto" alt="..."></ion-icon>
+            <p>+57 (300) 299-8195</p>
         </div>
         <div class="slotm2">
-            <ion-icon name="mail" class="card-img-top tamano-iconos" alt="..."></ion-icon>
-            <p style="padding: 8px; text-align: center; font-weight: bold;">leonavarro1197@gmail.com</p>
+            <ion-icon name="mail" class="card-img-top tamano-iconos-contacto" alt="..."></ion-icon>
+            <p>leonavarro1197@gmail.com</p>
         </div>
         <div class="slotm3">
-            <ion-icon name="logo-instagram" class="card-img-top tamano-iconos" alt="..."></ion-icon>
-            <p style="padding: 8px; text-align: center; font-weight: bold;">leonardonavarro333</p>
+            <ion-icon name="logo-instagram" class="card-img-top tamano-iconos-contacto" alt="..."></ion-icon>
+            <p>leonardonavarro333</p>
         </div>
     </div>
 
     <div class="sec5" style="background-color: #1751a4; padding-top: 10px;">
-        <p style="font-size: 12px; color: white; text-align: center;">Copyright© Portafolio Web Leonardo Navarro</p>
+        <p>Copyright© Portafolio Web Leonardo Navarro</p>
     </div>
 
     <!-- SCRIPT -->
@@ -260,9 +271,8 @@
     <script src="/js/vanilla-tilt.js"></script>
 
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"
-        integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV"
-        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-Fy6S3B9q64WdZWQUiU+q4/2Lc9npb8tCaSX9FK7E8HnRr0Jz8D6OP9dO5Vg3Q9ct" crossorigin="anonymous"></script>
 
         <!-- Swiper JS -->
       <script src="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.js"></script>
