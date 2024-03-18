@@ -375,7 +375,7 @@ ion-icon {
     max-width: 100%;
     border-width: 0.2rem;
     border-color: #e49116; 
-    margin-right: 880px; 
+    margin-right: 880px;
     margin-left: 880px;
     
 }
@@ -386,7 +386,7 @@ ion-icon {
 }
 
 .sec4 p{
-    padding: 8px; 
+    padding: 8px;
     text-align: center; 
 }
 
@@ -396,6 +396,244 @@ ion-icon {
     text-align: center;
 }
 
+/*Media queris de 1367 pixeles para abajo*/
+@media (max-width: 1367px){
+
+    .raya{
+        max-width: 100%;
+        border-width: 0.2rem;
+        border-color: #e49116; 
+        margin-right: 520px; 
+        margin-left: 520px;
+    }
+
+    /*sec*/
+    .sec2{
+        position: static;
+        background-color: #ffffff;
+        top: 0;
+        width: 100%;
+        padding-top: 100px;
+        padding-bottom: 100px;
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: repeat(2, auto);
+        grid-template-areas: "slot0 slot0" 
+                             "slot1 slot1"
+                             "slot2 slot2";
+    }
+    
+    .sec2 h3{
+        font-size: 2.5vw; 
+        color: #1751a4;
+    }
+    
+    .raya2{
+        max-width: 100%;
+        border-width: 0.2rem;
+        border-color: #e49116; 
+        margin-right: 600px; 
+        margin-left: 600px;
+        padding-bottom: 50px;
+    }
+
+    .slot1{
+        display: none;
+    }
+
+    .raya3{
+        max-width: 100%;
+        border-width: 0.2rem;
+        border-color: #e49116; 
+        margin-right: 600px; 
+        margin-left: 600px;
+        
+    }
+}
+
+/*Media queris de 1024 pixeles para abajo*/
+@media (max-width: 1025px){
+
+    /*seccion*/
+    .estilo-titulo{
+        font-family: 'Lobster', cursive;
+        font-size: 70px;
+    }
+
+    .quitar-titulo-nav{
+        display: none;
+    }
+
+    .quitar-muneca{
+        display: none;
+    }
+
+    /*sec*/
+    .sec{
+        background: #1751a4;
+        position: relative;
+        padding: 0px;
+        height: 10vh; 
+    }
+
+    .sec h3{
+        font-size: 4.0vw;
+        color: #fff;
+        margin-bottom: 3px;
+    }
+
+    .raya{
+        max-width: 100%;
+        border-width: 0.2rem;
+        border-color: #e49116; 
+        margin-right: 450px; 
+        margin-left: 450px;
+    }
+
+    .sobremi3{
+        padding-left: 180px; 
+        padding-right: 180px;
+    }
+
+    .sec p{
+        font-size: 1.0em;
+        color: #fff;
+    }
+
+    .wave{
+        position: absolute;
+        width: 100%;
+    }
+
+    /*sec*/
+    .sec2{
+        position: static;
+        background-color: #ffffff;
+        top: 0;
+        width: 100%;
+        padding-top: 100px;
+        padding-bottom: 100px;
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: repeat(2, auto);
+        grid-template-areas: "slot0 slot0" 
+                             "slot1 slot1"
+                             "slot2 slot2";
+    }
+    
+    .sec2 h3{
+        font-size: 4.0vw; 
+        color: #1751a4;
+    }
+    
+    .raya2{
+        max-width: 100%;
+        border-width: 0.2rem;
+        border-color: #e49116; 
+        margin-right: 450px; 
+        margin-left: 450px;
+        padding-bottom: 50px;
+    }
+
+    .posicion-itachi{
+        display: none;
+    }
+
+    /*sec2 slot2*/
+    .slot2{
+        display: flex;
+        grid-area: slot2;
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: repeat(2, auto);
+        grid-template-areas: "slotj1 slotj2"
+                             "slotj3 slotj4";
+    }
+
+    .slotj1{
+        grid-area: slotj1;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        padding-top: 15px;
+        padding-bottom: 15px;
+    }
+    
+    .slotj2{
+        grid-area: slotj2;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        padding-top: 15px;
+        padding-bottom: 15px;
+    }
+    
+    .slotj3{
+        grid-area: slotj3;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        padding-top: 15px;
+        padding-bottom: 15px;
+    }
+    
+    .slotj4{
+        grid-area: slotj4;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        padding-top: 15px;
+        padding-bottom: 15px;
+    }
+
+    .margin-slotj2-slotj4{
+        margin-right: 0px;
+    }
+
+    /*sec3*/
+    .sec3{
+        display: flex;
+        align-items: center;
+        background-color: #ececec;
+        width: 100%;
+        height: 60vh;
+    }
+
+    .sec4 h3{
+        font-size: 4.0vw; 
+        color: #1751a4; 
+        text-align: center;
+    }
+
+    .raya3{
+        max-width: 100%;
+        border-width: 0.2rem;
+        border-color: #e49116; 
+        margin-right: 450px; 
+        margin-left: 450px;
+        
+    }
+
+    .tamano-iconos-contacto{
+        font-size: 50px;
+        padding-top: 0px;
+    }
+
+    .sec4 p{
+        padding: 8px; 
+        text-align: center; 
+        font-size: 13px;
+    }
+
+    /*sec5*/
+    .sec5 p{
+        font-size: 8px; 
+        color: white; 
+        text-align: center;
+    }
+}
+
+/*Media queris de 415 pixeles para abajo*/
 @media (max-width: 415px){
 
     /*seccion*/
