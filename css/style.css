@@ -192,7 +192,7 @@ section #raya-titulo{
     grid-template-columns: repeat(2, 1fr);
     grid-template-rows: repeat(2, auto);
     grid-template-areas: "slot0 slot0" 
-                         "slot1 slot2";
+                         "slot2 slot2";
 }
 
 .sec2 h3{
@@ -209,11 +209,11 @@ section #raya-titulo{
     padding-bottom: 50px;
 }
 
-.posicion-itachi{
+/*.posicion-itachi{
     margin: 0;
     padding: 0;
     
-}
+}*/
 
 .tamano{
     width: 55%;
@@ -225,13 +225,13 @@ section #raya-titulo{
     text-align: center;
 }
 
-.slot1{
+/*.slot1{
     grid-area: slot1;
     display: flex;
     align-items: center;
-}
+}*/
 
-.tarjeta-itachi{
+/*.tarjeta-itachi{
     background-color: #ffffff;
     margin-left: 230px;
     margin-right: 230px;
@@ -239,7 +239,7 @@ section #raya-titulo{
     padding-bottom: 20px;
     border-radius: 15px;
     color: #000000;
-}
+}*/
 
 .sombra-tarjeta{
     box-shadow: 5px 5px 5px 5px #b4b4b4;
@@ -259,37 +259,41 @@ section #raya-titulo{
     grid-area: slotj1;
     display: flex;
     align-items: center;
-    justify-content: center;
-    padding-bottom: 15px;
+    justify-content: right;
+    padding-bottom: 25px;
+    padding-right: 25px;
 }
 
 .slotj2{
     grid-area: slotj2;
     display: flex;
     align-items: center;
-    justify-content: center;
-    padding-bottom: 15px;
+    justify-content: left;
+    padding-bottom: 25px;
+    padding-left: 25px;
 }
 
 .slotj3{
     grid-area: slotj3;
     display: flex;
     align-items: center;
-    justify-content: center;
-    padding-top: 15px;
+    justify-content: right;
+    padding-top: 25px;
+    padding-right: 25px;
 }
 
 .slotj4{
     grid-area: slotj4;
     display: flex;
     align-items: center;
-    justify-content: center;
-    padding-top: 15px;
+    justify-content: left;
+    padding-top: 25px;
+    padding-left: 25px;
 }
 
-.margin-slotj2-slotj4{
+/*.margin-slotj2-slotj4{
     margin-right: 150px;
-}
+}*/
 
 .tamano-iconos{
     font-size: 100px;
@@ -746,6 +750,8 @@ ion-icon {
         justify-content: center;
         padding-top: 15px;
         padding-bottom: 15px;
+        padding-right: 0px;
+        
     }
     
     .slotj2{
@@ -755,6 +761,7 @@ ion-icon {
         justify-content: center;
         padding-top: 15px;
         padding-bottom: 15px;
+        padding-left: 0px;
     }
     
     .slotj3{
@@ -764,6 +771,7 @@ ion-icon {
         justify-content: center;
         padding-top: 15px;
         padding-bottom: 15px;
+        padding-right: 0px;
     }
     
     .slotj4{
@@ -773,6 +781,7 @@ ion-icon {
         justify-content: center;
         padding-top: 15px;
         padding-bottom: 15px;
+        padding-left: 0px;
     }
 
     .margin-slotj2-slotj4{
